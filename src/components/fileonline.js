@@ -24,7 +24,8 @@ class MasterForm extends React.Component {
             monthlyinc: '',
             cardname: '',
             cardnum: '',
-            cardexpiry: ''
+            cardexpiry: '',
+            docs:''
         }
     }
 
@@ -48,7 +49,8 @@ class MasterForm extends React.Component {
             homeexpense,
             cardname,
             cardnum,
-            cardexpiry } = this.state
+            cardexpiry,
+        docs } = this.state
         this.ref.add({
             fname,
             lname,
@@ -60,7 +62,8 @@ class MasterForm extends React.Component {
             homeexpense,
             cardname,
             cardnum,
-            cardexpiry
+            cardexpiry,
+            docs
         }).then((docRef) => {
             this.setState({
                 currentStep: 1,
@@ -74,7 +77,8 @@ class MasterForm extends React.Component {
                 homeexpense: '',
                 cardname: '',
                 cardnum: '',
-                cardexpiry: ''
+                cardexpiry: '',
+                docs:''
             });
             //this.props.history.push("/")
             alert("Form Submitted!");
@@ -154,7 +158,7 @@ class MasterForm extends React.Component {
                         handleChange={this.handleChange}
                         monthlyinc={this.state.monthlyinc}
                         homeexpense={this.state.homeexpense}
-
+                        docs={this.state.docs}
                     />
                     <Step3
                         currentStep={this.state.currentStep}
@@ -163,6 +167,7 @@ class MasterForm extends React.Component {
                         cardnum={this.state.cardnum}
                         cardexpiry={this.state.cardexpiry}
                     />
+
                     <div id="buttona">
                         <div id="buttonb">
                             {this.previousButton()}
@@ -273,6 +278,15 @@ function Step2(props) {
                 value={props.homeexpense}
                 onChange={props.handleChange}
             />
+            <input
+                className="form-control"
+                //id="username"
+                name="docs"
+                type="text"
+                placeholder="Enter Online Link"
+                value={props.docs}
+                onChange={props.handleChange}
+            />
         </div>
     );
 }
@@ -318,4 +332,5 @@ function Step3(props) {
         </React.Fragment>
     );
 }
+
 export default MasterForm;

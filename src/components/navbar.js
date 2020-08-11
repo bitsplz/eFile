@@ -27,12 +27,12 @@ const Navbar = ({ currentUser }) => {
               {/*<a className="nav-link scroll" href="home.html">HOME <span className="sr-only">(current)</span></a>*/}
             </li>
           </Link>
-
+          <Link to="/fileonline" className="nav-link scroll">
           <li className="nav-item">
-            <a className="nav-link scroll" href="fileonline.html">FILE ONLINE</a>
+            FILE ONLINE
           </li>
-
-          <Link to="ThirdSection" className="nav-link scroll">
+</Link>
+          <Link to="/thirdsection" className="nav-link scroll">
             <li className="nav-item">OUR SERVICES
               {/*<a className="nav-link scroll" href="#services">OUR SERVICES</a>*/}
             </li>
@@ -49,7 +49,6 @@ const Navbar = ({ currentUser }) => {
               {/*<a className="nav-link scroll" href="contactus.html">CONTACT</a>*/}
             </li>
           </Link>
-
           {
             currentUser ?
               <div className='nav-link scroll w3-white register-button w3-hover-light-green' style={{ borderRadius: '40px' }} onClick={() => auth.signOut()}>

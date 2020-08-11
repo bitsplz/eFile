@@ -9,7 +9,6 @@ class Home extends React.Component{
     render(){
         return (
             <div>
-                
                 <FirstSection/>
                 <SecondSection />
                 <hr />
