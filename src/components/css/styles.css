@@ -1,0 +1,207 @@
+.row-header{
+    margin:0px auto;
+    padding:0px;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+footer{
+    background-color:#3fa46a;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+body{
+    padding:0px 0px 0px 0px;
+    z-index:0;
+}
+
+/*.navbar-dark {
+     background-color: #512DA8;
+}*/
+
+#wrap{
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #D3D8E8));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #D3D8E8 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    legend{
+        color:#141823;
+        font-size:25px;
+        font-weight:bold;
+    }
+    .signup-btn {
+      background: #79bc64;
+      background-image: -webkit-linear-gradient(top, #79bc64, #578843);
+      background-image: -moz-linear-gradient(top, #79bc64, #578843);
+      background-image: -ms-linear-gradient(top, #79bc64, #578843);
+      background-image: -o-linear-gradient(top, #79bc64, #578843);
+      background-image: linear-gradient(to bottom, #79bc64, #578843);
+      -webkit-border-radius: 4;
+      -moz-border-radius: 4;
+      border-radius: 4px;
+      text-shadow: 0px 1px 0px #898a88;
+      -webkit-box-shadow: 0px 0px 0px #a4e388;
+      -moz-box-shadow: 0px 0px 0px #a4e388;
+      box-shadow: 0px 0px 0px #a4e388;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px 20px 10px 20px;
+      border: solid #3b6e22  1px;
+      text-decoration: none;
+    }
+    
+    .signup-btn:hover {
+      background: #79bc64;
+      background-image: -webkit-linear-gradient(top, #79bc64, #5e7056);
+      background-image: -moz-linear-gradient(top, #79bc64, #5e7056);
+      background-image: -ms-linear-gradient(top, #79bc64, #5e7056);
+      background-image: -o-linear-gradient(top, #79bc64, #5e7056);
+      background-image: linear-gradient(to bottom, #79bc64, #5e7056);
+      text-decoration: none;
+    }
+    .navbar-default .navbar-brand{
+            color:#fff;
+            font-size:30px;
+            font-weight:bold;
+        }
+    .form .form-control { margin-bottom: 10px; }
+    @media (min-width:768px) {
+        #home{
+            margin-top:50px;
+        }
+        #home .slogan{
+            color: #0e385f;
+            line-height: 29px;
+            font-weight:bold;
+        }
+    }
+
+    /*-- nav --*/
+
+.navbar-light .navbar-brand {
+    color: #ffffff;
+    font-size: 35px;
+}
+#name:hover{
+  color: inherit;
+  text-decoration:none;
+}
+.navbar {
+    background-color: #3fa46a;
+}
+.nav-link{
+  cursor: pointer;
+}
+
+span.brand-d {
+    background-color: white;
+    color: #3fa46a;
+    margin: 5px;
+    padding: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #000000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 14px;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+li.register-button{
+    background-color: white;
+}
+
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  #first{
+    background:url(pic1.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+#tasdeeq{
+  background-image: url(./tasdeeq.png);
+}*/
