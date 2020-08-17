@@ -5,7 +5,7 @@ import './css/bootstrap.min.css';
 import './css/w3.css';
 import { firestore, storage } from 'firebase';
 import CustomButton from './custom-button';
-
+import Popup from "reactjs-popup";
 
 
 class MasterForm extends React.Component {
@@ -140,7 +140,7 @@ class MasterForm extends React.Component {
         return (
             <React.Fragment>
                 <form id="regForm" onSubmit={this.handleSubmit}>
-                    <b><h1>File Tax Online</h1></b>
+                    <b><h1>File Tax Online</h1></b> 
                     {/*<p>Step {this.state.currentStep} </p>*/}
                     {/*render the form steps and pass required props in*/}
                     <Step1
@@ -278,12 +278,13 @@ function Step2(props) {
                 value={props.homeexpense}
                 onChange={props.handleChange}
             />
+            <p>Documents Required: CNIC, Appointment Letter, Income Statement, TDS Proof</p>
             <input
                 className="form-control"
                 //id="username"
                 name="docs"
                 type="text"
-                placeholder="Enter Online Link"
+                placeholder="Enter Online Link of Documents"
                 value={props.docs}
                 onChange={props.handleChange}
             />

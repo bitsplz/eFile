@@ -41,8 +41,7 @@ export const createUserProfileDocument = async(userAuth, additionalData)=>{
 
 // Initialize Firebase
 firebase.initializeApp(config);
-//firebase.firestore().settings({timestampsInSnapshots: true});
-//firebase.analytics();
+
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 

@@ -72,7 +72,7 @@ class Contact extends React.Component {
                             </div>
                             <div className="column">
                                 <form onSubmit={this.handleSubmit} >
-                                    <label htmlFor="fname">Name</label>
+                                    <label >Name</label>
                                     <input
                                         name="name"
                                         type="text"
@@ -80,7 +80,7 @@ class Contact extends React.Component {
                                         Value={name}
                                         onChange={this.handleChange}
                                     />
-                                    <label htmlFor="lname">Email</label>
+                                    <label>Email</label>
                                     <input
                                         name="email"
                                         type="email"
@@ -88,9 +88,9 @@ class Contact extends React.Component {
                                         Value={email}
                                         onChange={this.handleChange}
                                     />
-                                    <label htmlFor="subject">Message</label>
+                                    <label >Message</label>
                                     <input
-                                        name="subject" style={{ height: '170px' }}
+                                        name="message" style={{ height: '170px' }}
                                         type="text"
                                         placeholder="Write something.."
                                         Value={message}
